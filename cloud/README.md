@@ -39,8 +39,8 @@ cd cloud/api
 export APP_SESSION_SECRET=dev-secret-dev-secret-dev-secret-012345 APP_SECURE_COOKIE=false
 export AUTH0_DOMAIN=dev-tnnibhkgdbepzjy1.us.auth0.com AUTH0_CLIENT_ID=i8rRy5TlNKCvd4tMFWOqMkJRY1PhCPvq AUTH0_CLIENT_SECRET=<its secret>
 mvn -DskipTests package
-java -jar target/occ-pricer-cloud.jar import-catalog            # downloads Scryfall bulk data (~500 MB)
-java -jar target/occ-pricer-cloud.jar                           # API on :8080
+java -jar target/cardbox-trading-cloud.jar import-catalog            # downloads Scryfall bulk data (~500 MB)
+java -jar target/cardbox-trading-cloud.jar                           # API on :8080
 cd ../web && npm install && npm run dev                          # client on :5173, proxies /api to :8080
 ```
 
@@ -89,7 +89,7 @@ search; `enabled = false` stops syncing and searching it.
 
 ## Azure
 
-Everything lives in one resource group. The Azure resources, the jar (`occ-pricer-cloud.jar`), the image repository (`occ-pricer`) and the Java packages keep their original OCC Pricer names on purpose: renaming them is a redeploy, not a label change.
+Everything lives in one resource group. The Azure resources and the image repository (`occ-pricer`) keep their original OCC Pricer names on purpose: renaming them is a redeploy, not a label change. The jar (`cardbox-trading-cloud.jar`) and the application class carry the CardBox Trading name.
 
 | Resource | SKU | Purpose |
 |---|---|---|

@@ -151,7 +151,7 @@ public class TcgTrackingCatalog {
 
     public TcgTrackingCatalog(JdbcTemplate jdbc, ObjectMapper mapper,
                               @Value("${app.tcgtracking.base:https://openapi.tcgtracking.com/v1}") String base,
-                              @Value("${app.catalog.user-agent:OCCPricerCloud/0.1}") String userAgent,
+                              @Value("${app.catalog.user-agent:CardBoxTrading/0.1}") String userAgent,
                               @Value("${app.tcgtracking.pause-ms:1000}") long pauseMs,
                               @Value("${app.tcgtracking.budget-minutes:20}") long budgetMinutes,
                               @Value("${app.tcgtracking.pricing-max-age-hours:72}") int pricingMaxAgeHours) {

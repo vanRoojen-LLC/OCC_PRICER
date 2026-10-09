@@ -60,7 +60,7 @@ public class CatalogImporter {
 
     public CatalogImporter(JdbcTemplate jdbc, ObjectMapper mapper,
                            @Value("${app.catalog.bulk-index-url:https://api.scryfall.com/bulk-data/default-cards}") String bulkIndexUrl,
-                           @Value("${app.catalog.user-agent:OCCPricerCloud/0.1}") String userAgent) {
+                           @Value("${app.catalog.user-agent:CardBoxTrading/0.1}") String userAgent) {
         this.jdbc = jdbc;
         this.mapper = mapper;
         this.bulkIndexUrl = bulkIndexUrl;

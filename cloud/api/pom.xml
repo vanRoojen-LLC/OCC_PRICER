@@ -9,7 +9,7 @@
     <relativePath/>
   </parent>
   <groupId>com.cardpricer</groupId>
-  <artifactId>occ-pricer-cloud</artifactId>
+  <artifactId>cardbox-trading-cloud</artifactId>
   <version>0.1.0</version>
   <name>CardBox Trading Cloud API</name>
   <properties>
@@ -33,7 +33,7 @@
     <dependency><groupId>org.testcontainers</groupId><artifactId>junit-jupiter</artifactId><scope>test</scope></dependency>
   </dependencies>
   <build>
-    <finalName>occ-pricer-cloud</finalName>
+    <finalName>cardbox-trading-cloud</finalName>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

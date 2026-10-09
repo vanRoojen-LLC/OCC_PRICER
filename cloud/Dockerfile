@@ -20,7 +20,7 @@ RUN mvn -q -B -f cloud/api/pom.xml -DskipTests package
 FROM eclipse-temurin:21-jre-alpine
 RUN addgroup -S app && adduser -S app -G app
 WORKDIR /app
-COPY --from=api /repo/cloud/api/target/occ-pricer-cloud.jar app.jar
+COPY --from=api /repo/cloud/api/target/cardbox-trading-cloud.jar app.jar
 USER app
 EXPOSE 8080
 ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "/app/app.jar"]

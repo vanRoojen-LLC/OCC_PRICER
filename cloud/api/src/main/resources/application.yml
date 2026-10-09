@@ -1,5 +1,5 @@
 spring:
-  application.name: occ-pricer-cloud
+  application.name: cardbox-trading-cloud
   datasource:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/occ}
     username: ${DATABASE_USER:occ}
@@ -62,4 +62,4 @@ app:
     base: ${TCGTRACKING_BASE:https://openapi.tcgtracking.com/v1}
     pause-ms: ${TCGTRACKING_PAUSE_MS:1000}
     budget-minutes: ${TCGTRACKING_BUDGET_MINUTES:20}
-  catalog.user-agent: OCCPricerCloud/0.1 (+https://github.com/vanRoojen-LLC/CardBox-Trading)
+  catalog.user-agent: CardBoxTrading/0.1 (+https://github.com/vanRoojen-LLC/CardBox-Trading)

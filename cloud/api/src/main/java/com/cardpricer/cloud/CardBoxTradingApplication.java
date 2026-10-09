@@ -13,11 +13,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class OccPricerApplication {
+public class CardBoxTradingApplication {
     public static void main(String[] args) {
         if (Arrays.asList(args).contains("import-catalog")) {
             // Run as the nightly Container Apps job: import, then exit with a status code.
-            var app = new SpringApplication(OccPricerApplication.class);
+            var app = new SpringApplication(CardBoxTradingApplication.class);
             app.setWebApplicationType(WebApplicationType.NONE);
             var context = app.run(args);
             int status = 0;
@@ -70,6 +70,6 @@ public class OccPricerApplication {
             }
             System.exit(SpringApplication.exit(context, () -> 0) + status);
         }
-        SpringApplication.run(OccPricerApplication.class, args);
+        SpringApplication.run(CardBoxTradingApplication.class, args);
     }
 }

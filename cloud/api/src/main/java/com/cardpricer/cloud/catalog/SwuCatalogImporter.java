@@ -64,7 +64,7 @@ public class SwuCatalogImporter {
 
     public SwuCatalogImporter(JdbcTemplate jdbc, ObjectMapper mapper,
                               @Value("${app.swu.api-base:https://api.swu-db.com}") String apiBase,
-                              @Value("${app.catalog.user-agent:OCCPricerCloud/0.1}") String userAgent,
+                              @Value("${app.catalog.user-agent:CardBoxTrading/0.1}") String userAgent,
                               @Value("${app.swu.pause-ms:250}") long pauseMs) {
         this.jdbc = jdbc;
         this.mapper = mapper;

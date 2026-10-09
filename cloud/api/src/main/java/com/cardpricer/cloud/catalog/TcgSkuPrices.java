@@ -72,7 +72,7 @@ public class TcgSkuPrices {
 
     public TcgSkuPrices(JdbcTemplate jdbc, ObjectMapper mapper,
                         @Value("${app.tcgtracking.base:https://openapi.tcgtracking.com/v1}") String base,
-                        @Value("${app.catalog.user-agent:OCCPricerCloud/0.1}") String userAgent,
+                        @Value("${app.catalog.user-agent:CardBoxTrading/0.1}") String userAgent,
                         @Value("${app.tcgtracking.pause-ms:1000}") long pauseMs,
                         @Value("${app.tcgtracking.sku-max-sets:600}") int maxSets) {
         this.jdbc = jdbc;

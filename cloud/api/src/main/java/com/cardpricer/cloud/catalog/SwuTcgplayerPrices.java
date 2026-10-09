@@ -70,7 +70,7 @@ public class SwuTcgplayerPrices {
     public SwuTcgplayerPrices(JdbcTemplate jdbc, ObjectMapper mapper,
                               @Value("${app.swu.tcgcsv-base:https://tcgcsv.com}") String base,
                               @Value("${app.tcgtracking.base:https://openapi.tcgtracking.com/v1}") String trackingBase,
-                              @Value("${app.catalog.user-agent:OCCPricerCloud/0.1}") String userAgent,
+                              @Value("${app.catalog.user-agent:CardBoxTrading/0.1}") String userAgent,
                               @Value("${app.swu.pause-ms:250}") long pauseMs) {
         this.jdbc = jdbc;
         this.mapper = mapper;
